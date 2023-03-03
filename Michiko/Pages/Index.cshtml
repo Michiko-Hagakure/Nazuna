@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Michiko";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Michiko</title>
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <div class="text-center">
+                <img src="https://i.pinimg.com/736x/2b/e6/80/2be680292cdea62cd8495a9d5a5866c0.jpg"
+                     style="width: 60px; height: 60px" />
+            </div>
+            <form action="#">
+                <div class="control">
+                    <label for="username" style="font-family:'Segoe Script';color: black; font-size: 20px;">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                </div>
+                <div class="control">
+                    <label for="password" style="font-family:'Segoe Script';color: black;font-size: 20px;">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                </div>
+                <span style="font-family:'Segoe Script';color: black;"><input type="checkbox">Remember me</span>
+                <div class="control">
+                    <input type="button" onclick="alert('こんにちは Konnichiwa')" value="Login">
+                </div>
+                <div class="forgot">
+                    <a href="#" style="color: white;font-family:'Segoe Script';font-size:20px;">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

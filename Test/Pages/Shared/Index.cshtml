@@ -1,0 +1,199 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Michiko";
+}
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Test.styles.css" asp-append-version="true" />
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkz2HJ3OCssNUDqBrJLmPPM6ndyKVdVML32rlT4H51SOLxVxK5hGSdtLCj40tjr_uCF3M&usqp=CAU" type="image/x-icon" />
+    <title>Login</title>
+    <style>
+        .navbar-brand img {
+            height: 70px;
+            padding-left: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #fff;
+        }
+
+        section {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background: url(https://images4.alphacoders.com/973/973967.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .form-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0));
+            width: 550px;
+            padding: 50px 30px;
+            border-radius: 20px;
+            box-shadow: 10px 20px 60px black;
+        }
+
+        .control input {
+            width: 100%;
+            display: block;
+            padding: 10px;
+            color: #222;
+            border: none;
+            outline: none;
+            margin: 1em 0;
+            background-color: transparent;
+            border: solid 3px;
+            border-bottom: 3px solid;
+            border-radius: 30px;
+        }
+
+            .control input[type="submit"] {
+                background: crimson;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 1.2em;
+                opacity: .8;
+                transition: opacity .3s ease;
+            }
+
+        a.navbar-brand {
+            white-space: normal;
+            text-align: center;
+            word-break: break-all;
+        }
+
+        a {
+            color: #0077cc;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #1b6ec2;
+            border-color: #1861ac;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #fff;
+            background-color: #1b6ec2;
+            border-color: #1861ac;
+        }
+
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+
+        button.accept-policy {
+            font-size: 1rem;
+            line-height: inherit;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            white-space: nowrap;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="https://www.kindpng.com/picc/m/691-6912065_anime-discord-icons-hd-png-download.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index" style="font-family:'Segoe Script';">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy" style="font-family:'Segoe Script';">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/GitHub" style="font-family:'Segoe Script';">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="form-container">
+            <div class="text-center">
+                <img src="https://i.pinimg.com/736x/2b/e6/80/2be680292cdea62cd8495a9d5a5866c0.jpg"
+                     style="width: 60px; height: 60px" />
+            </div>
+            <form action="#">
+                <div class="control">
+                    <label for="username" style="color:black;font-family:Arial;font-size:20px;font-family:'Segoe Script';">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                </div>
+                <div class="control">
+                    <label for="password" style="color:black;font-family:Arial;font-size:20px;font-family:'Segoe Script';">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                </div>
+                <br />
+                <span span style="color:black"><input type="checkbox">Remember me</span>
+                <div class="control">
+                    <input type="submit" value="Login">
+                </div>
+                <div class="forgot">
+                    <a href="#" style="color:black;">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Michiko Hagakure - <a asp-area="" asp-page="/Michiko">Michiko</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background: url(https://images4.alphacoders.com/973/973967.jpg);
+    background-size: 1920px 1080px;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url();
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(232, 156, 195, 0.8),rgba(0, 0, 0, 0.0));
+    width: 550px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 10px 20px 60px #c73456;
+}
+
+.control input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    background-color: transparent;
+    border: solid 3px;
+    border-bottom: 3px solid;
+    border-radius: 15px;
+}
+
+    .control input[type="button"] {
+        background: crimson;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Segoe Script';
+        font-size: 1.2em;
+        opacity: .8;
+        transition: opacity .3s ease;
+    }
+
+.navbar-brand img {
+    height: 70px;
+    padding-left: 20px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
