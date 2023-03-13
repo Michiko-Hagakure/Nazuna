@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\myProjects\\Michiko\\Michiko.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\Michiko\\Michiko\\Michiko.csproj",
       "projectName": "Michiko",
-      "projectPath": "C:\\Users\\Admin\\Documents\\myProjects\\Michiko\\Michiko.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\Michiko\\Michiko\\Michiko.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\myProjects\\Michiko\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\Michiko\\Michiko\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
