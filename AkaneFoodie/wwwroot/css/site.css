@@ -1,0 +1,51 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('');
+}
+#carouselExample {
+    height: 400px;
+}
+footer {
+    background-color: #808080ff;
+}
+header {
+    z-index: 1000;
+}
+.dishCard {
+    height: 250px;
+}
+#recipe-list {
+    top: 5rem;
+}
+#recipe-list ul::-webkit-scrollbar {
+    width: 10px;
+}
+#recipe-list ul::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+#recipe-list ul::-webkit-scrollbar-thumb {
+    background-color: #ff1448;
+    border-radius: 10px;
+}
+.recipe-item:hover {
+    background-color: #0d243d;
+    border-radius: 10px;
+}
+.recipe-item:hover a {
+    color: #ffffff !important;
+}

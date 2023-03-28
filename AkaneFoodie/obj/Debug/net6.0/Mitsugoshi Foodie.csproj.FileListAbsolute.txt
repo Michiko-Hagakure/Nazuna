@@ -1,0 +1,31 @@
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\Mitsugoshi Foodie.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\Mitsugoshi Foodie.exe
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\Mitsugoshi Foodie.deps.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\Mitsugoshi Foodie.runtimeconfig.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\Mitsugoshi Foodie.dll
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\bin\Debug\net6.0\Mitsugoshi Foodie.pdb
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\staticwebassets\msbuild.Mitsugoshi Foodie.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\staticwebassets\msbuild.build.Mitsugoshi Foodie.props
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Mitsugoshi Foodie.props
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Mitsugoshi Foodie.props
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\scopedcss\bundle\Mitsugoshi Foodie.styles.css
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\scopedcss\projectbundle\Mitsugoshi Foodie.bundle.scp.css
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.dll
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\refint\Mitsugoshi Foodie.dll
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.pdb
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\Mitsugoshi Foodie.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Akane\AkaneFoodie\obj\Debug\net6.0\ref\Mitsugoshi Foodie.dll
