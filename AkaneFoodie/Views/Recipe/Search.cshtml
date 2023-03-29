@@ -17,14 +17,14 @@
             </div>
         </div>
         <div class="col-10">
-            <h4 class="text-dark" style="font-family: 'Lobster', cursive;">Search Recipes</h4>
+            <h4 class="text-dark" style="font-family: 'Lobster', cursive;">Search Foodies</h4>
             <div class="row" id="searchRecipe"></div>
         </div>
     </div>
 </div>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
-        GetRecipes('@ViewBag.Recipe','searchRecipes',true);
+    $(document).ready(function() {
+        GetRecipes('@ViewBag.Recipe', 'searchRecipe' ,true);
     })
 </script>

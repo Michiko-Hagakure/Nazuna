@@ -19,6 +19,15 @@ namespace AkaneFoodie.Controllers
             ViewBag.Recipe = recipe;
             return View();
         }
+        public IActionResult Order([FromQuery] string id)
+        {
+            ViewBag.Id = id;
+            return View();
+        }
+        public IActionResult ShowOrder([FromBody] OrderRecipeDetails details)
+        {
+            return PartialView("",details);
+        }
     }
 
 }

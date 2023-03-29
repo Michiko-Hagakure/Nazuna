@@ -27,7 +27,7 @@ header {
     z-index: 1000;
 }
 .dishCard {
-    height: 250px;
+    height: 300px;
 }
 #recipe-list {
     top: 5rem;

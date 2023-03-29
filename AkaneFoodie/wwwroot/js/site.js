@@ -24,3 +24,8 @@ function showRecipes(recipes, id) {
         }
     });
 }
+async function getOrderRecipe(id) {
+    let resp = await fetch(`${apiUrl}/${id}?key=${apiKey}`);
+    let result = await resp.json();
+    console.log(result);
+}
