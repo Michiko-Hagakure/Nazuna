@@ -1,0 +1,401 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMst.master.cs" Inherits="SMS.Admin.AdminMst" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>SMS</title>
+    <meta charset="UTF-8">
+        <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link href="../Content/style.css" rel="stylesheet" />
+        <script src="../Scripts/jquery-3.0.0.min.js"></script>
+        <script src="../Scripts/popper.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".siderbar_menu li").click(function () {
+                    $(".siderbar_menu li").removeClass("active");
+                    $(this).addClass("active");
+                });
+
+                $(".hamburger").click(function () {
+                    $(".wrapper").addClass("active");
+                });
+
+                $(".close, .bg_shadow").click(function () {
+                    $(".wrapper").removeClass("active");
+                });
+            });
+            function success() {
+                Swal.fire(
+                    'Inserted Successfully!',
+                    'Class Added!',
+                    'success'
+                )
+            }
+            function failed() {
+                Swal.fire(
+                    'Class Already Exist!',
+                    'Add Failed!',
+                    'error'
+                )
+            }
+            function update() {
+                Swal.fire(
+                    'Class Updated Successfully!',
+                    'Updated',
+                    'success'
+                )
+            }
+            function success1() {
+                Swal.fire(
+                    'Inserted Successfully!',
+                    'Fees Added!',
+                    'success'
+                )
+            }
+            function failed1() {
+                Swal.fire(
+                    'Entered Fees Already Exist!',
+                    'Add Failed!',
+                    'error'
+                )
+            }
+            function update1() {
+                Swal.fire(
+                    'Fees Updated Successfully!',
+                    'Updated',
+                    'success'
+                )
+            }
+            function deleted() {
+                Swal.fire(
+                    'Fees Deleted Successfully!',
+                    'Deleted!',
+                    'success'
+                )
+            }
+            function success2() {
+                Swal.fire(
+                    'Subject SuccessFully Inserted!',
+                    'Inserted!',
+                    'success'
+                )
+            }
+            function failed2() {
+                Swal.fire(
+                    'Entered Subject Already Exist!',
+                    'Add Failed!',
+                    'error'
+                )
+            }
+            function update2() {
+                Swal.fire(
+                    'Subject Updated Successfully!',
+                    'Updated',
+                    'success'
+                )
+            }
+            function deleted1() {
+                Swal.fire(
+                    'Subject Deleted Successfully!',
+                    'Deleted!',
+                    'success'
+                )
+            }
+            function deleted2() {
+                Swal.fire(
+                    'Class Deleted Successfully!',
+                    'Deleted!',
+                    'success'
+                )
+            }
+            function success3() {
+                Swal.fire(
+                    'Inserted Success',
+                    'Teacher Added',
+                    'success'
+                )
+            }
+            function failed3() {
+                Swal.fire(
+                    'Entered Teacher Already Exist!',
+                    'Add Failed!',
+                    'error'
+                )
+            }
+            function genderRequired() {
+                Swal.fire(
+                    'Gender is Required!',
+                    'Required!',
+                    'error'
+                )
+            }
+            function deleteTeacher() {
+                Swal.fire(
+                    'Teacher Deleted Successfully!',
+                    'Deleted!',
+                    'success'
+                )
+            }
+            function updateTeacher() {
+                Swal.fire(
+                    'Info Updated!',
+                    'Updated!',
+                    'success'
+                )
+            }
+            function alExist() {
+                Swal.fire(
+                    'Teacher Subject Already Exist',
+                    'Exist!',
+                    'error'
+                )
+            }
+            function tSuccess() {
+                Swal.fire(
+                    'Assign Success',
+                    'Assigned',
+                    'success'
+                )
+            }
+            function tSubDel() {
+                Swal.fire(
+                    'Teacher Subject Deleted!',
+                    'Delete Success',
+                    'success'
+                )
+            }
+            function tUpdate() {
+                Swal.fire(
+                    'Record Updated Successfully!',
+                    'Updated',
+                    'success'
+                )
+            }
+            function tSFailed() {
+                Swal.fire(
+                    'Failed to Assign a Teacher',
+                    'Failed',
+                    'failed'
+                )
+            }
+            function Exsuccess() {
+                Swal.fire(
+                    'Inserted Successfully!',
+                    'Expense Added!',
+                    'success'
+                )
+            }
+            function ExAlr() {
+                Swal.fire(
+                    'The Data is Already Exist!',
+                    'Failed To Add!',
+                    'error'
+                )
+            }
+            function ExDel() {
+                Swal.fire(
+                    'Data Expense Deleted!',
+                    'Success Delete',
+                    'success'
+                )
+            }
+            function ExUpdt() {
+                Swal.fire(
+                    'Data Expense Updated!',
+                    'Success Update',
+                    'success'
+                )
+            }
+            function StudSuccess() {
+                Swal.fire(
+                    'Student Inserted',
+                    'success inserted',
+                    'success'
+                )
+            }
+            function StudAlEx() {
+                Swal.fire(
+                    'Student Already Exist',
+                    'exist',
+                    'error'
+                )
+            }
+            function StudUpdt() {
+                Swal.fire(
+                    'Student Info Update!',
+                    'update success',
+                    'success'
+                )
+            }
+            function marksInsert() {
+                Swal.fire(
+                    'Inserted Successfully!',
+                    'Inserted!',
+                    'success'
+                )
+            }
+            function markAlEx() {
+                Swal.fire(
+                    'Already Exist!',
+                    'Existed!',
+                    'error'
+                )
+            }
+            function doesAlEx() {
+                Swal.fire(
+                    'Does Not Exist For Selected Class!',
+                    'Not Existed!',
+                    'error'
+                )
+            }
+            function mUpdate() {
+                Swal.fire(
+                    'Data Update!',
+                    'Update',
+                    'success'
+                )
+            }
+            function attIn() {
+                Swal.fire(
+                    'Data Inserted!',
+                    'insert',
+                    'success'
+                )
+            }
+        </script>
+
+    <script>
+        $(function () {
+            var url = window.location.href;
+
+            $("sub-header a").each(function () {
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active")
+                }
+            });
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="bg_shadow"></div>
+                <div class="sidebar_inner" id="sub-header">
+                    <div class="close">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <div class="profile_info">
+                        <div class="profile_img">
+                            <img src="../Image/logo.png" alt="profile_img">
+                        </div>
+                        <div class="profile_data">
+                            <p class="name">Admin Module</p>
+                            <span><i class="fas fa-map-marker-alt"></i>Test</span>
+                        </div>
+                    </div>
+
+                    <ul class="siderbar_menu">
+                        <li>
+                            <a href="../Admin/AdminHome.aspx">
+                                <div class="icon"><i class="fas fa-home"></i></div>
+                                <div class="title">Home</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="fas fa-hotel"></i></div>
+                                <div class="title">Class</div>
+                                <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+                            </a>
+                            <ul class="accordion">
+                                <li><a href="../Admin/AddClass.aspx" class="active"><i class="fas fa-user-plus pr-1"></i>Add Class</a></li>
+                                <li><a href="../Admin/ClassFees.aspx" class="active"><i class="fas fa-money-bill-alt pr-1"></i>Class Fees</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../Admin/Subject.aspx">
+                                <div class="icon"><i class="fas fa-book"></i></div>
+                                <div class="title">Subjects</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="fas fa-user-tie"></i></div>
+                                <div class="title">Teachers</div>
+                                <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+                            </a>
+                            <ul class="accordion">
+                                <li><a href="../Admin/Teacher.aspx" class="active"><i class="fas fa-user-plus pr-1"></i>Add Teachers</a></li>
+                                <li><a href="../Admin/TeacherSubject.aspx" class="active"><i class="fas fa-book-reader pr-1"></i>Teachers Subject</a></li>
+                                <li><a href="../Admin/Expense.aspx" class="active"><i class="fas fa-hand-holding-usd pr-1"></i>Add Expense</a></li>
+                                <li><a href="../Admin/ExpenseDetails.aspx" class="active"><i class="fas fa-money-check-alt pr-1"></i>Expense Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="fas fa-user-graduate"></i></div>
+                                <div class="title">Students</div>
+                                <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+                            </a>
+                            <ul class="accordion">
+                                <li><a href="../Admin/Student.aspx" class="active"><i class="fas fa-users pr-1"></i>Add Students</a></li>
+                                <li><a href="../Admin/StudAttendanceDetails.aspx" class="active"><i class="far fa-list-alt pr-1"></i>Attendance Details</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+                                <div class="title">Examination</div>
+                                <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+                            </a>
+                            <ul class="accordion">
+                                <li><a href="../Admin/Marks.aspx" class="active"><i class="fas fa-notes-medical pr-1"></i>Add Marks</a></li>
+                                <li><a href="../Admin/MarkDetails.aspx" class="active"><i class="fas fa-clipboard-check pr-1"></i>Marks Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                                <div class="title">Attendance</div>
+                                <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+                            </a>
+                            <ul class="accordion">
+                                <li><a href="../Admin/EmployeeAttendance.aspx" class="active"><i class="fas fa-calendar-plus pr-1"></i>Employee Attendance</a></li>
+                                <li><a href="../Admin/EmpAttendanceDetails.aspx" class="active"><i class="fas fa-calendar-check pr-1"></i>Employee Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="logout_btn">
+                        <asp:LinkButton ID="btnLogOut" runat="server" CausesValidation="false" OnClick="btnLogOut_Click">Logout</asp:LinkButton>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="navbar">
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="#">Sus Amongus School</a>
+                    </div>
+                </div>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
